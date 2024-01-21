@@ -29,6 +29,12 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+details > summary{
+	font-size: 1.35em;	
+	cursor: pointer;
+	list-style: disc;
+}
+
 body {
 	line-height: 1;
 }

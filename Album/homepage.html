@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Album</title>
@@ -17,8 +12,6 @@
 		<!-- Wrapper -->
 			<div id="wrapper">
 
-				<!-- Header -->
-				<!-- Note: The "styleN" class below should match that of the banner element. -->
 					<header id="header" class="alt style2">
 						<a href="../index.html" class="logo"><strong>Yusen Wang</strong> <span>Home</span></a>
 						<nav>
@@ -76,23 +69,23 @@
 						   max-width: 80%;
 						   max-height: 60%;
 						   margin: auto;
-						   margin-top: 5%;
+						   margin-top: 10%;
 						}
 					 </style>
 
-<script>
-	function showModal(image) {
-	   var modal = document.getElementById("modal");
-	   var modalImage = document.getElementById("modal-image");
-	   modal.style.display = "block";
-	   modalImage.src = image.src;
-	}
-  
-	function hideModal() {
-	   var modal = document.getElementById("modal");
-	   modal.style.display = "none";
-	}
- </script>			
+					<script>
+						function showModal(image) {
+						var modal = document.getElementById("modal");
+						var modalImage = document.getElementById("modal-image");
+						modal.style.display = "block";
+						modalImage.src = image.src;
+						}
+					
+						function hideModal() {
+						var modal = document.getElementById("modal");
+						modal.style.display = "none";
+						}
+					</script>			
 
 				<!-- Main -->
 					<div id="main">
@@ -101,39 +94,57 @@
 						<section id="one">
 							<div class="inner">
 								<header class="major">
-									<h2>Photos&nbsp&nbsp照片</h2>
+									<h2 class="link">Photos&nbsp&nbsp照片</h2>
 								</header>
-									<!-- Content -->
-									<ul>
-										<li>2023.12 月度总结</li>
-									</ul>
 								
+								<details>
+									<summary class="major"><a>2023.12 月度总结</a></summary>
+									</br>
 									<div class="box alt">
 										<div class="row gtr-50 gtr-uniform">
 											<div class="col-3"><span class="image fit"><img src="../images/pic1.jpg" alt="" onclick="showModal(this)"/></span></div>
-											
-											<div class="col-3">
-												<span class="image fit"><img src="../images/pic1.jpg" alt="" /></span>
-												<div id="modal" class="modal" onclick="hideModal()">
+											<div id="modal" class="modal" onclick="hideModal()">
 													<img id="modal-image" class="modal-image">
 												</div>
-											</div>
-											<div class="col-3"><span class="image fit"><img src="../images/pic1.jpg" alt="" /></span></div>	
-											<div class="col-3"><span class="image fit"><img src="../images/pic1.jpg" alt="" /></span></div>
+											<div class="col-3"><span class="image fit"><img src="../images/pic1.jpg" alt="" onclick="showModal(this)"/></span></div>
+											<div id="modal" class="modal" onclick="hideModal()">
+													<img id="modal-image" class="modal-image">
+												</div>
+											<div class="col-3"><span class="image fit"><img src="../images/pic1.jpg" alt="" onclick="showModal(this)"/></span></div>
+											<div id="modal" class="modal" onclick="hideModal()">
+													<img id="modal-image" class="modal-image">
+												</div>	
+											<div class="col-3"><span class="image fit"><img src="../images/pic1.jpg" alt="" onclick="showModal(this)"/></span></div>
+											<div id="modal" class="modal" onclick="hideModal()">
+													<img id="modal-image" class="modal-image">
+												</div>
+												
 										</div>
 									</div>
+								</details>
+								
 								<hr class="major" />
 								<header class="major">
 									<h2>Videos&nbsp&nbsp影像</h2>
 								</header>
 									<!-- Content -->
-								
-								
+								<details>
+									<summary class="major"><a>2023.12 月度总结</a></summary>
+									</br>
 									<div class="box alt">
 										<div class="row gtr-50 gtr-uniform">
-											
+										
+											<video controls="controls">
+											<source src="images/WeChat_20240121152453.mp4" type="video/mp4"></source></video>
+											 
+
+
 										</div>
 									</div>
+								
+							
+								</details>
+								
 								<hr class="major" />
 							</div>
 						</section>
