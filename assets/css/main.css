@@ -43,6 +43,15 @@ details > summary{
 	display : block;
 }
 
+.module_new{
+	display : none;
+}
+
+.active_new{
+	display : block;
+}
+
+
 body {
 	line-height: 1;
 }
