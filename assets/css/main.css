@@ -8,7 +8,7 @@
 */
 
 html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+iframe, h0, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
@@ -35,6 +35,14 @@ details > summary{
 	list-style: disc;
 }
 
+.module{
+	display : none;
+}
+
+.active{
+	display : block;
+}
+
 body {
 	line-height: 1;
 }
@@ -56,6 +64,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 
 body {
 	-webkit-text-size-adjust: none;
@@ -186,17 +195,20 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h0, h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
 		font-weight: 600;
 		line-height: 1.65;
 		margin: 0 0 1em 0;
 	}
 
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+		h0 a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 			border-bottom: 0;
 		}
+	h0 {
+		font-size: 3.25em;
+	}
 
 	h1 {
 		font-size: 2.5em;
@@ -223,6 +235,9 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 736px) {
+		h0 {
+			font-size: 2.5em;
+		}
 
 		h1 {
 			font-size: 2em;
@@ -2374,7 +2389,7 @@ input, select, textarea {
 /* Pagination */
 
 	ul.pagination {
-		cursor: default;
+		cursor: pointer;
 		list-style: none;
 		padding-left: 0;
 	}
